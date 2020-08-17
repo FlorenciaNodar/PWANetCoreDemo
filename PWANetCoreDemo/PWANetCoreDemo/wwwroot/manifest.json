@@ -1,0 +1,44 @@
+﻿{
+  "name": "PWANetCoreDemo",    
+  "short_name": "PWA",    
+  "description": "Demo PWA application in ASP.NET Core.",
+  "icons": [
+    {
+      "src": "img/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/pwa-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "img/android-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "img/android-36x36.png",
+      "type": "image/png",
+      "sizes": "36x36"
+    },
+    {
+      "src": "img/android-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "img/android-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "img/android-96x196.png",
+      "type": "image/png",
+      "sizes": "96x196"
+    }
+  ],    
+  "display": "standalone",    
+  "start_url": "/"    
+}     
