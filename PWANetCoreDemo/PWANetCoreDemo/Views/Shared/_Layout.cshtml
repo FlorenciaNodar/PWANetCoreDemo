@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Demo PWA.">
     <title>@ViewData["Title"] - PWANetCoreDemo</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="apple-touch-icon" href="/img/pwa-192x192.png">
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="theme-color" content="#ffffff" />
 
@@ -47,7 +49,11 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
-    <script>'serviceWorker' in navigator && navigator.serviceWorker.register('/serviceworker')</script>
+    <script> if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/serviceworker')
+                .then(function () { console.log('Service Worker Registered'); });
+        }</script>
 
 </body>
 </html>
