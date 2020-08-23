@@ -5,7 +5,7 @@
     // Update 'version' if you need to refresh the cache
     var version = 'v1.0::CacheFirstSafe';
     //var offlineUrl = "/offline.html";
-    var offlineApp = ["/offline.html", "Home/Privacy"];
+    var offlineApp = ["/", "/Home/Privacy"];
 
     // Store core files in a cache (including a page to display when offline)
     function updateStaticCache() {
