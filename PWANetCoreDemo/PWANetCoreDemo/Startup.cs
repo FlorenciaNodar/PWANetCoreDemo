@@ -24,7 +24,7 @@ namespace PWANetCoreDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddProgressiveWebApp();
+           // services.AddProgressiveWebApp();
 
         }
 
